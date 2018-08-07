@@ -56,12 +56,14 @@ L["Right Button"]					= "Bouton droit";
 L["Shift"]							= "Shift";	-- Mod-Key!
 L["Ctrg"]							= "Ctrlg";	-- Mod-Key!
 L["Alt"]							= "Alt";	-- Mod-Key!
+--L["Set the border size."]			= "";
+--L["The height of the edit box."]	= "";
 
 --L["Chat Buttons with Modifier Key 1"]						= "";
 --L["Chat Buttons with Modifier Key 2"]						= "";
---L["Set the border size.\n\nDefault is 1."]				= "";
+--L["Set the vertical positioning of the edit box."]			= "";
+--L["Set the spacing between the background and the border."]	= "";
 
---L["Set the spacing between the background and the border.\n\nDefault is 0."]					= "";
 --L["Allow the use of modifier keys to swap chat buttons while in combat."]						= "";
 
 -- MUI Core
@@ -110,6 +112,7 @@ L["Money per character"]			= "Argent par personnage";
 --[[
 L["Guild Chat"]						= "Discussion de guilde";
 L["Whispers"]						= "Chuchotement";
+
 -- MUI Castbar
 L[" CastBar not enabled."]			= "Castbar désactivé";
 L["Lock"]							= "Verrouillé";
@@ -135,7 +138,7 @@ L["Height"]							= "Hauteur";
 L["Frame Strata"]					= "";
 L["Frame Level"]					= "";
 L["Manual Positioning"]				= "";
-L["Point"]							= "";
+L["Point"]							= "Point d'ancrage";
 L["Relative Frame"]					= "";
 L["Relative Point"]					= "";
 L["X-Offset"]						= "X-Offset";
@@ -144,10 +147,12 @@ L["Player"]							= "Joueur";
 L["Target"]							= "Cible";
 L["Focus"]							= "Focus";
 L["Mirror"]							= "Miroir";
+
 L["If enabled the Cast Bar will be fixed to the %s Unit Frame's Portrait Bar (if it exists)."]	;
 L["The %s Unit Frames's Portrait Bar needs to be enabled to use this feature."]					;
 L["Only takes effect if the Cast Bar is not anchored to a SUF Portrait Bar."]					;
 L["Manual positioning only works if the CastBar is not anchored to a SUF Portrait Bar."]		;
+
 -- MUI Minimap
 L["CTRL + Drag:"]					= "CTRL + Déplacer:";
 L["SHIFT + Drag:"]					= "SHIFT + Déplacer:";
@@ -162,14 +167,16 @@ L["Zoom in/out"]					= "Zoom avant/arrière";
 L["Toggle this Tooltip"]			= "";
 L["New Event!"]						= "Nouvel événement";
 L["Calendar"]						= "Calendrier";
-L["Customer Support"]				= "";
-L["Class Order Hall"]				= "";
-L["Garrison Report"]				= "";
-L["Tracking Menu"]					= "";
+L["Customer Support"]				= "Assistance clients";
+L["Class Order Hall"]				= "Rapport de domaine";
+L["Garrison Report"]				= "Rapport de garnison";
+L["Tracking Menu"]					= "Menu de traque";
 L["MUI Config Menu"]				= "Menu de configuration MUI";
 L["MUI Installer"]					= "Installateur MUI";
 L["Music Player"]					= "Lecteur de musique";
-L["Cannot access config menu while in combat."]				= "";
+
+L["Cannot access config menu while in combat."]				= "Vous ne pouvez pas accéder au menu de configuration lorsque vous êtes en combat.";
+
 -- MUI Setup
 L["Choose Theme:"]					= "Choix du thème:";
 L["Custom Colour"]					= "Couleur personalisée";
@@ -182,26 +189,29 @@ L["Remove Profile:"]				= "Supprimer le profil:";
 L["Confirm"]						= "Confirmer";
 L["Cancel"]							= "Annuler";
 L["Enabled Chat Frames:"]			= "";
-L["Top Left"]						= "";
-L["Top Right"]						= "";
-L["Bottom Left"]					= "";
-L["Bottom Right"]					= "";
-L["Adjust the UI Scale:"]			= "";
+L["Top Left"]						= "En haut à gauche";
+L["Top Right"]						= "En haut à droite";
+L["Bottom Left"]					= "En bas à gauche";
+L["Bottom Right"]					= "En bas à droite";
+L["Adjust the UI Scale:"]			= "Ajuster l'échelle de l'interface";
 L["Use Localization:"]				= "";
 L["WoW Client: "]					= "Client WoW: ";
-L["AddOn Settings to Override:"]	= "";
+L["AddOn Settings to Override:"]	= "Options des addons à passer outre:";
 L["Install"]						= "Installation";
 L["INSTALL"]						= "Installation";
 L["CUSTOM INSTALL"]					= "Installation personalisée";
 L["INFORMATION"]					= "INFORMATION";
-L["Warning:"]						= "";
-L["This will reload the UI!"]		= "";
-L["Setup Menu"]						= "";
+L["Warning:"]						= "Attention:";
+L["This will reload the UI!"]		= "Ceci rechargera votre interface!";
+L["Setup Menu"]						= "Menu d'installation";
 L["VERSION"]						= "VERSION";
+
+
 L["This will ensure that frames are correctly positioned to match the UI scale during installation.\n\nDefault value is 0.7"]	;
+
 -- MUI TimerBar
-L["Only track your %s"]				= "";
-L["Track all %s"]					= "";
+L["Only track your %s"]				= "Traquer uniquement vos %s";
+L["Track all %s"]					= "Traquer tous les %s";
 L["General Options"]				= "";
 L["Sort By Time Remaining"]			= "";
 L["Show Tooltips On Mouseover"]		= "";
@@ -211,39 +221,42 @@ L["Name of TimerBar Field to Remove:"]	= "";
 L["TimerBar field '%s' created."]	= "";
 L["TimerBar field '%s' remove."]	= "";
 L["TimerBar field '%s' does not exist."]	= "";
-L["Remove Field"]					= "";
+L["Remove Field"]					= "Supprimer la zone";
 L["Existing Timer Bar Fields"]		= "";
-L["Enable Field"]					= "";
-L["<%s Field>"]						= "";
-L["Unit to Track"]					= "";
-L["Manage Tracking Buffs"]			= "";
-L["TargetTarget"]					= "";
-L["FocusTarget"]					= "";
-L["Manage Tracking Debuffs"]		= "";
+L["Enable Field"]					= "Activer la zone";
+L["<%s Field>"]						= "<Zone %s>";
+L["Unit to Track"]					= "Unité à suivre";
+L["Manage Tracking Buffs"]			= "Gérer les Buffs à traquer";
+L["TargetTarget"]					= "Cible de la cible";
+L["FocusTarget"]					= "Cible du focus";
+L["Manage Tracking Debuffs"]		= "Gérer les Debuff à traquer";
 L["Appearance Options"]				= "";
-L["Up"]								= "";
-L["Down"]							= "";
-L["Bar Width"]						= "";
-L["Bar Height"]						= "";
-L["Bar Spacing"]					= "";
-L["Show Icons"]						= "";
-L["Show Spark"]						= "";
-L["Buff Bar Color"]					= "";
-L["Debuff Bar Color"]				= "";
-L["Manual Positioning"]				= "";
-L["Text Options"]					= "";
-L["Time Remaining Text"]			= "";
-L["Show"]							= "";
-L["Font Size"]						= "";
+L["Up"]								= "Vers le haut";
+L["Down"]							= "Vers le bas";
+L["Bar Width"]						= "Largeur de la barre";
+L["Bar Height"]						= "Longeur de la barre";
+L["Bar Spacing"]					= "Espacement des barres";
+L["Show Icons"]						= "Afficher les icônes";
+L["Show Spark"]						= "Afficher la lueur";
+L["Buff Bar Color"]					= "Couleur des barres de buff";
+L["Debuff Bar Color"]				= "Couler des barres de debuff";
+L["Manual Positioning"]				= "Positionnement manuel";
+L["Text Options"]					= "Options du texte";
+L["Time Remaining Text"]			= "Temps restant";
+L["Show"]							= "Afficher";
+L["Font Size"]						= "Taille de police";
 L["Default is 11"]					= "";
-L["Font Type"]						= "";
-L["Spell Name Text"]				= "";
-L["Enter the Name of a %s to Track:"]															= "";
+L["Font Type"]						= "Police";
+L["Spell Name Text"]				= "Nom du sort";
+
+
+L["Enter the Name of a %s to Track:"]															= "Entrer le nom du %s à traquer:";
 L["Only %s casted by you will be tracked."]														= "";
 L["Ignore the list of %s to track and track everything."]										= "";
 L["Enabling this will dynamically generate the list of %s to track."]							= "";
 L["The unit who is affected by the spell."]														= "";
 L["The field's vertical growth direction:"]														= "";
+
 -- MUI Config
 L["Reload UI"]						= "";
 L["General"]						= "";
@@ -331,6 +344,7 @@ L["Never"]							= "";
 L["Always"]							= "";
 L["On Mouse-over"]					= "";
 L["Bar"]							= "";
+
 L["Uncheck to prevent MUI from changing the game font."]	= "";
 L["Config type '%s' unsupported!"]							= "";
 L["The UI requires reloading to apply changes."]			= "";
@@ -356,6 +370,7 @@ L["The higher the value, the quicker the speed."]			= "";
 L["The height of the gradient effect."]						= "";
 L["Adjust the spacing between data text buttons."]			= "";
 L["The frame strata of the entire DataText bar."]			= "";
+
 L["Anchor the Objective Tracker to the action bar container on the right side of the screen."]	= "";
 L["Disable this to stop MUI from controlling the Objective Tracker."]							= "";
 L["Adjust the horizontal positioning of the Objective Tracker."]								= "";
@@ -376,18 +391,22 @@ L["colored gradient will overlay it."]															= "";
 L["TT_MUI_CONTROL_SUF"]				=
 [[If enabled, MUI will reposition the Shadowed Unit
 Frames to fit over the top of the MUI Unit Panels.
+
 It will also automatically move the Unit Frames when
 expanding and retracting the MUI Action Bar Panel.]];
 
 L["TT_MUI_CONTROL_GRID"]			=
 [[|cff00ccffImportant:|r Only for the |cff00ccff'MayronUIH' Grid Profile|r (used in the Healing Layout)!
+
 If enabled, MUI will reposition the Grid Frame to fit on top of the MUI Unit Panels.
+
 It will also automatically move the Grid Frame when expanding and retracting the
 MUI Action Bar Panel.]];
 
 L["TT_MUI_CONTROL_BARTENDER"]		=
 [[If enabled, MUI will reposition the selected Bartender
 bars to fit over the top of the action bar panel.
+
 It will also control the fading in and out transitions
 of selected row 2 Bartender bars when expanding and
 retracting the MUI Action Bar Panel.]];
